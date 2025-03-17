@@ -1,0 +1,89 @@
+.section.article-featured-container{
+    padding: 0 14px;
+}
+.section.article-featured-container > .article-featured-wrapper > .article-featured.block {
+    font-family: "Source Sans 3", "Helvetica Neue", Helvetica, Arial, sans-serif;   
+
+    > div {
+        
+        display: flex;
+        text-align: left;
+        background-color: #efefef;
+        flex-direction: column-reverse;
+
+        > div {
+            flex: 0 0 65%;
+
+            > picture > img {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        > div:last-child {
+            flex:0 0 35%;
+            word-wrap: break-word;
+            padding:63px 36px 36px;
+            box-sizing: border-box;
+
+            > h3 {
+                font-weight: 100;
+            }
+
+            > p:first-child {
+                font-size: 18px;
+                margin: 0 0 13.5px;
+                font-weight: 600;
+            }
+
+            > p:nth-child(3) {
+                font-size: 14px;
+            }
+
+            > .button-container {
+                display: flex;
+                > em > a {
+                    font-size: var(--fontSizeSmall, 14px);
+                    font-weight: 600;
+                }
+
+                > em > a:link {
+                    background-color: #FFEA00;
+                    padding:14px 35px;   
+                    border-radius: 0;
+                    border: none;
+                }
+            }
+        }
+
+        @media(width>=768px){
+                flex-direction: row;
+        }
+
+    }
+}
+
+.section.article-featured-container h2 { 
+    color: var(--textColor,#202020); 
+    line-height: 1.5;
+} 
+
+.section.article-featured-container h2 { 
+    font-family: var(--fontFamilySerif,"Asar",Georgia,"Times New Roman",Times,serif); 
+    font-weight: var(--fontWeightNormal,normal); 
+    margin-bottom: 13.5px; 
+    margin-top: 27px;
+} 
+.section.article-featured-container h2 { 
+    font-size: var(--fontSizeH2,36px);
+} 
+
+.section.article-featured-container h1 {
+    font-family: "Asar", Georgia, "Times New Roman", Times, serif;
+    font-weight: var(--fontWeightNormal, normal) !important;
+    margin-bottom: 13.5px !important;
+    margin-top: 27px !important;
+    font-size: 40px !important;
+    
+}

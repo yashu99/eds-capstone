@@ -1,0 +1,9 @@
+
+.image-text.block p {
+    font-size: 18px;
+    line-height: 2.5;
+    margin: 0 0 13.5px;
+    text-align: justify;
+    font-style: italic;
+    font-weight: bold;
+}
